@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Task Manager</h1>
+    <p>Manage your daily tasks easily</p>
+
+    <form id="taskForm">
+
+      <input id="title" placeholder="Task title" required>
+
+      <textarea id="description"
+        placeholder="Task description"></textarea>
+
+      <div class="row">
+
+        <select id="priority">
+          <option value="Low">Low Priority</option>
+          <option value="Medium" selected>Medium Priority</option>
+          <option value="High">High Priority</option>
+        </select>
+
+        <select id="status">
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+        </select>
+
+      </div>
+
+      <button type="submit" id="saveBtn">Add Task</button>
+
+    </form>
+
+    <input
+      id="search"
+      placeholder="Search tasks..."
+    >
+
+    <div id="taskList"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
